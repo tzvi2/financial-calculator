@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <title>Financial Calculator</title>
+</head>
+<body>
+    
+    <h1>Select a tool:</h1>
+
+    <div class="nav_container">
+        <a href="#" id="investment_page_link" class="link active"> Investment Calculator</a>
+        <a href="#" id="property_page_link" class="link">Rental Profit Calculator</a>
+    </div>
+
+    <div id="investment_page" class="page">
+    
+        <label for="initial_balance">Initial Balance:</label>
+        <input type="number" name="initial_balance" id="initial_balance" value="">
+        <br>
+        <label for="monthly_investment">Monthly Investment:</label>
+        <input type="number" name="monthly_investment" id="monthly_investment" value="">
+        <br>
+        <label for="interest_rate">Interest Rate:</label>
+        <input type="number" name="interest_rate" id="interest_rate" value="">
+        <br>
+        <!-- <label for="accrual_options">Accrue Interest:</label>
+        <select name="accrual_options" id="accrual_options">
+            <option value="monthly">Monthly</option>
+            <option value="annually">Annually</option>
+        </select>
+        <br> -->
+        <label for="years">Total Years:</label>
+        <input type="number" name="years" id="total_years" value="">
+        <br>
+        <input type="submit" class="results" id="investment_results_button" value="Results">
+        <p class="result_text" id="investment_result_text"></p>
+    </div>
+
+    <div id="property_page" class="page">
+        <label for="initial_cost">Property Cost:</label>
+        <input type="number" name="initial_cost" id="initial_cost">
+        <label for="rent">Rent Income (monthly):</label>
+        <input type="number" name="rent" id="rent_income">
+        <label for="taxes:(">Property Tax (annual %):</label>
+        <input type="number" name="taxes" id="taxes">
+        <label for="expenses">Yearly Expenses:</label>
+        <input type="number" name="expenses" id="expenses">
+        <br>
+        <input type="submit" class="results" id="property_results_button" value="Results">
+        <p class="result_text" id="property_income_text"></p>
+        <p class="result_text" id="property_break_even_text"></p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

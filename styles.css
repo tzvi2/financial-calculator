@@ -1,0 +1,157 @@
+body {
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(98, 123, 193, .4), rgb(16, 121, 182, .7));
+    font-family: 'Roboto', sans-serif;
+}
+
+/* small phone screens */
+
+@media only screen and (max-width: 600px) { 
+
+    h1 {
+        color: rgb(93, 93, 184);
+        font-size: 5vw;
+        margin: 30px;
+    }
+
+    .nav_container {
+        width: 100%;
+        display: grid;
+    }
+
+    .link {
+        color: rgb(255, 255, 255);
+        font-size: 5vw;
+        margin: 5px 20px;
+        letter-spacing: 1px;
+        text-decoration: none;
+    }
+
+    /* grid container */
+    .page {
+        margin-top: 30px;
+        display: none;
+        grid-template-columns: 50% 50%;
+        row-gap: 6px;
+        font-size: 3.5vw;
+        justify-items: center;
+    }
+
+    .page > label{
+        font-size: 4vw;
+        grid-column-start: 1;
+    }
+
+    .results {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-radius: 15px;
+        border-width: 1px;
+        font-size: 1.2em;
+        letter-spacing: .5px;
+        margin: 5px;
+        width: 25%;
+        height: 5vw;
+    }
+
+    .result_text {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin: 0;
+        justify-self: center;
+        visibility: hidden;
+        font-size: 4vw;
+    }
+}
+
+/* bigger screens */
+
+@media only screen and (min-width: 600px) { 
+
+    h1 {
+        color: rgb(93, 93, 184);
+        margin: 30px auto;
+        font-size: 4vw;
+    }
+
+    .nav_container {
+        width: 100%;
+        margin: auto;
+        word-wrap: normal;
+    }
+
+    .link {
+        color: white;
+        font-size: 3.6vw;
+        margin: 30px 20px;
+        letter-spacing: 1px;
+        text-decoration: none;
+    }
+
+    /* grid container */
+    .page {
+        margin-top: 30px;
+        display: none;
+        grid-template-columns: 15% 35% 35% 15%;
+        row-gap: 6px;
+        font-size: 3vw;
+        justify-items: center;
+    }
+
+    .page > label {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .results {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        border-radius: 15px;
+        border-width: 1px;
+        font-size: .9em;
+        letter-spacing: .5px;
+        margin: 5px;
+        width: 25%;
+        height: 4vw;
+    }
+
+    .result_text {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        margin: 0;
+        justify-self: center;
+        visibility: hidden;
+    }
+}
+
+@media only screen and (min-width: 1165px) {
+
+    .link {
+        font-size: 3vw;
+    }
+
+}
+    
+.link:hover {
+    color: rgb(93, 93, 184);
+}
+
+.link.active {
+    color: rgb(93, 93, 184);
+    cursor: auto;
+}
+
+/*.page > select {
+    border-radius: 15px;
+}*/
+
+.page > input[type='number'] {
+    border-radius: 15px;
+    border-width: 1px;
+    font-size: .9em;
+    font-weight: 100;
+}
+
+#investment_page {
+    display: grid;
+}
