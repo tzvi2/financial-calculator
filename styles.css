@@ -71,7 +71,7 @@ body {
     h1 {
         color: rgb(93, 93, 184);
         margin: 30px auto;
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
 
     .nav_container {
@@ -82,7 +82,7 @@ body {
 
     .link {
         color: white;
-        font-size: 3.6vw;
+        font-size: 3vw;
         margin: 30px 20px;
         letter-spacing: 1px;
         text-decoration: none;
@@ -113,6 +113,7 @@ body {
         margin: 5px;
         width: 25%;
         height: 4vw;
+        font-size: 2vw;
     }
 
     .result_text {
