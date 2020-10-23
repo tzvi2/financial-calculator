@@ -77,14 +77,14 @@ function getInvestResults() {
         }
     }
     else { // no interest rate inputted
-        total = initial + (monthlyAmount * totalYears)
+        total = initial + (monthlyAmount * 12 * totalYears)
     }
 
     total = total.toFixed(2)
     $('#investment_result_text').css('visibility', 'visible').append('You\'ll have $'+ total.replace(/\B(?=(\d{3})+(?!\d))/g, ",") + ' after '+totalYears+' year(s).' )
 }
 
-// calculate property stuff
+// property stuff
 
 function getPropResults() {
 
@@ -109,6 +109,7 @@ function getPropResults() {
         return 
     }
 
+    // default to 0 for empty fields
     if(initial === 0) propCostField.value = 0
     if(tax === 0) propTaxField.value = 0
     if(expenses === 0) expenseField.value = 0
