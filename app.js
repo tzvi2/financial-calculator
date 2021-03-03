@@ -10,14 +10,14 @@ $('#property_page_link').click(goToProp)
 
 function goToInv() {
     propertyPage.style.display = 'none'
-    investmentPage.style.display = 'grid'
+    investmentPage.style.display = 'flex'
     $('#investment_page_link').toggleClass('active', true)
     $('#property_page_link').toggleClass('active', false)
 }
 
 function goToProp() {
     investmentPage.style.display = 'none'
-    propertyPage.style.display = 'grid'
+    propertyPage.style.display = 'flex'
     $('#property_page_link').toggleClass('active', true)
     $('#investment_page_link').toggleClass('active', false)
 }
