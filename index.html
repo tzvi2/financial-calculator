@@ -11,45 +11,49 @@
     
     <h1>Select a Tool:</h1>
 
-   
     <div class="nav_container nav_row">
         <a href="#" id="investment_page_link" class="link active"> Investment Calculator</a>
         <hr>
         <a href="#" id="property_page_link" class="link">Rental Profit Calculator</a>
     </div>
     
-
     <div id="investment_page" class="col">
-    
-        <label for="initial_balance">Initial Balance:</label>
-        <input type="number" name="initial_balance" id="initial_balance" value="">
+        <div class="inputs">
+            <label for="initial_balance">Initial Balance:</label>
+            <input type="number" name="initial_balance" id="initial_balance" value="">
+            
+            <label for="monthly_investment">Monthly Investment:</label>
+            <input type="number" name="monthly_investment" id="monthly_investment" value="">
         
-        <label for="monthly_investment">Monthly Investment:</label>
-        <input type="number" name="monthly_investment" id="monthly_investment" value="">
-       
-        <label for="interest_rate">Interest Rate:</label>
-        <input type="number" name="interest_rate" id="interest_rate" value="">
-        
-        <label for="years">Total Years:</label>
-        <input type="number" name="years" id="total_years" value="">
-        
-        <input type="submit" class="results" id="investment_results_button" value="Results">
+            <label for="interest_rate">Interest Rate:</label>
+            <input type="number" name="interest_rate" id="interest_rate" value="">
+            
+            <label for="years">Total Years:</label>
+            <input type="number" name="years" id="total_years" value="">
+            
+            <input type="submit" class="results" id="investment_results_button" value="Results">
+        </div>
         <p class="result_text" id="investment_result_text"></p>
     </div>
 
     <div id="property_page" class="col">
-        <label for="initial_cost">Property Cost:</label>
-        <input type="number" name="initial_cost" id="initial_cost">
-        <label for="rent">Rent Income (monthly):</label>
-        <input type="number" name="rent" id="rent_income">
-        <label for="taxes:(">Property Tax (annual %):</label>
-        <input type="number" name="taxes:(" id="taxes">
-        <label for="expenses">Yearly Expenses:</label>
-        <input type="number" name="expenses" id="expenses">
+        <div class="inputs">
+            <label for="initial_cost">Property Cost:</label>
+            <input type="number" name="initial_cost" id="initial_cost">
+
+            <label for="rent">Rent Income (monthly):</label>
+            <input type="number" name="rent" id="rent_income">
+
+            <label for="taxes:(">Property Tax (annual %):</label>
+            <input type="number" name="taxes:(" id="taxes">
+            
+            <label for="expenses">Yearly Expenses:</label>
+            <input type="number" name="expenses" id="expenses">
+            
+            <input type="submit" class="results" id="property_results_button" value="Results">
+        </div>
         
-        <input type="submit" class="results" id="property_results_button" value="Results">
         <p class="result_text" id="property_income_text"></p>
-        <p class="result_text" id="property_break_even_text"></p>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

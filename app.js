@@ -117,9 +117,9 @@ function getPropResults() {
     annualIncome = (rentIncome * 12) - annualTaxAmount - expenses
     breakEven = (initial / rentIncome) / 12
     
-    $('#property_income_text').append('Annual profit: $' + annualIncome.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")).css('visibility', 'visible')
+    $('#property_income_text').append('Annual profit: $' + annualIncome.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",") + '.').css('visibility', 'visible')
     if(annualIncome > 0) {
-        $('#property_break_even_text').append('It will take ' + breakEven.toFixed(1) + ' years to make back property cost.').css('visibility', 'visible')
+        $('#property_income_text').append(' It will take ' + breakEven.toFixed(1) + ' years to make back property cost.').css('visibility', 'visible')
     }
 
 }
